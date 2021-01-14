@@ -1,0 +1,11 @@
+<h1>Chapters</h1>
+
+<div *ngFor = "let chapter of chapters;">
+  <h3>
+    <a [title]="chapter.name + 'details'"[routerLink]="['/chapters',chapter.id]">
+         {{chapter.name}} 
+    </a>
+  </h3>
+  <p *ngIf="chapter.description">
+    {{chapter.description}}
+</div>
