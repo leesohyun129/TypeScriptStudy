@@ -4,7 +4,7 @@
       {{test.index + 1}}.
       {{test.question}} 
       
-      <form [formGroup]="examForm" (ngSubmit) = "onExam()">    
+      <form [formGroup]="examForm" (ngSubmit) = "onSubmit()">    
       <input type="text" formControlName="answer" name = "answer" size = "25" autocomplete = "off">
       <button class= "button" type ="submit">check</button> 
       </form>
