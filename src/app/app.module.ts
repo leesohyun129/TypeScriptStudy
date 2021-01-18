@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { ChapterListComponent } from './chapter-list/chapter-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { TestComponent} from './test/test.component';
+import { ChapterComponent } from './chapter/chapter.component';
 
 @NgModule({
   imports:      [ 
@@ -19,7 +20,7 @@ import { TestComponent} from './test/test.component';
     ])
   ],
   declarations: [ 
-    AppComponent, ChapterListComponent, TopBarComponent, TestComponent
+    AppComponent, ChapterListComponent, TopBarComponent, TestComponent, ChapterComponent, 
     ],
   bootstrap:    [ 
     AppComponent 
