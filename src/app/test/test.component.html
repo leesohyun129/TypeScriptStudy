@@ -1,11 +1,11 @@
 <h1>Question Lists</h1>
-<div *ngFor="let test of chapter1_test">
+<div *ngFor="let test of chapter1_test; let idx = index">
   <h3>
       {{test.index + 1}}.
       {{test.question}} 
       
-      <form [formGroup]="examForm" (ngSubmit) = "onSubmit()">    
-      <input type="text" formControlName="answer" name = "answer" size = "25" autocomplete = "off">
+      <form [formGroup]="examForm" (ngSubmit) = "onSubmit(test.index)">    
+      <input type="text"  formControlName="answer" name = "answer" size = "25" autocomplete = "off">
       <button class= "button" type ="submit">check</button> 
       </form>
   </h3>

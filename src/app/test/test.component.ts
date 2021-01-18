@@ -16,15 +16,17 @@ export class TestComponent {
   chapter1_test = chapter1_test; //배열을 사용하고싶다....
   constructor(private formBuilder: FormBuilder){
   }
-  onSubmit(){
-    this.exam(JSON.parse(this.examForm.value.id),(this.examForm.value.answer));
+  onSubmit(index: number){
+    this.examForm.value.id = index;
+    this.exam(this.examForm.value.id, this.examForm.value.answer);
   }
   exam(id: number, answer: string){
+
     if(chapter1_test[id].answer == answer){
-      window.alert("정답");
+      window.alert(answer + " is right");
     }
     else{
-      window.alert("오답");
+      window.alert(answer + " is wrong");
     }
   }
 }
