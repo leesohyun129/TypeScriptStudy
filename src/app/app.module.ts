@@ -9,6 +9,8 @@ import { ChapterListComponent } from './chapter-list/chapter-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { TestComponent} from './test/test.component';
 import { ChapterComponent } from './chapter/chapter.component';
+import { TestPaperComponent } from './test-paper/test-paper.component';
+import { TestExamComponent } from './test-exam/test-exam.component';
 
 @NgModule({
   imports:      [ 
@@ -20,7 +22,7 @@ import { ChapterComponent } from './chapter/chapter.component';
     ])
   ],
   declarations: [ 
-    AppComponent, ChapterListComponent, TopBarComponent, TestComponent, ChapterComponent, 
+    AppComponent, ChapterListComponent, TopBarComponent, TestComponent, ChapterComponent, TestPaperComponent, TestExamComponent, 
     ],
   bootstrap:    [ 
     AppComponent 

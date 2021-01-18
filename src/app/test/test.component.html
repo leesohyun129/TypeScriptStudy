@@ -1,6 +1,10 @@
 <h1>Question Lists</h1>
 <div *ngFor="let test of chapter1_test">
   <h3>
-      {{test.question}} 
+      {{test.index + 1}}.
+      {{test.question}} <br/>
+      <form>
+      <input type="text" name = "answer" size = "25">
+      </form>
   </h3>
 </div>
